@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather App</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Icons -->
+    <script
+      src="https://kit.fontawesome.com/972df6eb1d.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles/main.css" />
+    <!-- Scripts -->
+    <script src="config.js" defer></script>
+    <script src="scripts/index.js" defer></script>
+  </head>
+  <body>
+    <!-- Header section -->
+    <header>
+      <!-- Nav section -->
+      <nav class="top-layer">
+        <ul>
+          <li class="logo">
+            <a href="index.html">
+              <i class="fa-solid fa-sun"></i>
+              <p class="bold">WeatherApp</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!-- Main section -->
+    <main class="centered column">
+      <!-- Visually hidden header for screen readers -->
+      <h1 class="visually-hidden">Weather App</h1>
+
+      <!-- Weather details section -->
+      <section class="weather increasedFont">
+        <!-- Visually hidden header for screen readers -->
+        <h2 class="visually-hidden">Weather Details</h2>
+        <ul class="weather-details centered column flex-spacing">
+          <li class="weather-location bold"></li>
+          <li class="weather-temp-wrapper">
+            <p class="weather-temp"></p>
+            <span class="weather-temp-unit"></span>
+          </li>
+          <li>
+            <figure class="centered">
+              <img class="weather-icon" src="" alt="" />
+              <figcaption class="weather-conditions"></figcaption>
+            </figure>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Search section -->
+      <section class="search">
+        <!-- Visually hidden header for screen readers -->
+        <h2 class="visually-hidden">Weather Search</h2>
+        <form role="search">
+          <ul>
+            <li class="searchbar">
+              <label class="visually-hidden" for="city-search">City Name</label>
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input
+                autocomplete="off"
+                type="search"
+                id="city-search"
+                name="city-search"
+                placeholder="Search for a city"
+              />
+            </li>
+            <li class="search-results"></li>
+          </ul>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
